@@ -1,0 +1,16 @@
+package forum20200413;
+
+public class AppProduto {
+
+	public static void main(String[] args) {
+		Produto passatempo = new Produto();
+
+		passatempo.setDescricao("Passsatempo biscoito recheado 180g");
+		passatempo.setCodigo("12304561");
+	//	passatempo.setQuantidadeEmUnidade("1900");
+		passatempo.setLote("5409932");
+
+		System.out.println(passatempo);
+	}
+
+}

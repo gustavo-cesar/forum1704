@@ -1,0 +1,17 @@
+package forum2;
+
+public class AppSmartphone {
+	
+	public static void main(String[] args) {
+		
+		Smartphone celular = new Smartphone();
+		
+		celular.setPreco(35.0);
+		celular.setPreco(90.0);
+		
+		
+		celular.setMarca("");
+	
+	}
+
+}

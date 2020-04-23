@@ -1,0 +1,31 @@
+package forum2;
+
+public class AppSmartphone {
+	
+	public static void main(String[] args) {
+		
+		Smartphone celular = new Smartphone();
+		Smartphone celularLg = new Smartphone();
+		
+		/*celular.setPreco(35.0);
+		celular.setPreco(90.0);
+		
+		
+		celular.setMarca("");*/
+		
+		Smartphone celularDoGustavo = new Smartphone("Smartphone", "Samsung", 1.00);
+		
+		System.out.println(celularDoGustavo.getNomeSmartphone());
+		
+		try {
+			celularDoGustavo.setMarca("samsung");
+			celularDoGustavo.setPreco(-9.0);
+	
+		} catch (Exception e) {
+			System.out.println("gustavo é  gay");
+		}
+		
+	
+	}
+
+}

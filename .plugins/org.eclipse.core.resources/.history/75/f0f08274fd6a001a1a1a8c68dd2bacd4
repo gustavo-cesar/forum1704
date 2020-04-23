@@ -1,0 +1,35 @@
+package aula20200320.testesGerais;
+
+public class GerenciadorDeComissao {
+
+	public static double calcularComissaoPadrao(double valorDaVenda, double percentualDeComissao) {
+		return valorDaVenda * (percentualDeComissao / 100.00);
+	}
+
+	public static double calcularComissaoComValorMinimo(double valorMinimo, double valorDaVenda,
+			double percentualDeComissao) {
+		double atingiuValorMinimo = valorDaVenda * percentualDeComissao / 100;
+
+		if (atingiuValorMinimo >= valorMinimo) {
+			return atingiuValorMinimo;
+		}
+
+		return valorMinimo;
+	}
+
+	public static double calcularComissaoComFaixa(double valorMinimo, double valorMaximo, double valorDaVenda,
+			double percentualDeComissao) {
+double valorAtingidoDeComissao = valorDaVenda * percentualDeComissao / 100;
+		
+		if(valorAtingidoDeComissao >= valorMinimo && valorAtingidoDeComissao <= valorMaximo) {
+			return valorAtingidoDeComissao;
+		}
+		
+		if(valorAtingidoDeComissao <= valorMinimo) {
+			return valorMinimo;
+		}
+		return valorMaximo;
+	
+	}
+
+}

@@ -1,0 +1,89 @@
+package forum20200413;
+
+public class Produto {
+	private String descricao;
+	private String codigo;
+	private double quantidadeEmUnidade;
+	private String lote;
+	private boolean podutoTemEstoque;
+	private int anoFrabricacao;
+
+	/*public String toString() {
+		return "Produto[" + "codigo:" + getCodigo() + ", Descricao:" + getDescricao() + ", lote=" + getLote()
+				+ ", Quantidade em unidade " + getQuantidadeEmUnidade() + " ]";
+
+	}*/
+
+	// 2.1 Um construtor padrão;
+	public Produto() {
+		this.quantidadeEmUnidade = 50;
+		this.podutoTemEstoque = true;
+
+	}
+
+	// 2.2 Um construtor alternativo;
+	public Produto(String descricao, int anoFrabricacao) {
+		setDescricao(descricao);
+		setAnoFrabricacao(anoFrabricacao);
+
+	}
+
+	// 2.3 Um método modificador;
+
+	// 2.4 Um método de acesso cujo retorno seja o valor de um atributo;
+
+	public boolean ispodutoTemEstoque() {
+		return podutoTemEstoque;
+
+	}
+
+	// 2.5 Um método de acesso cujo retorno NÂO seja o valor de um atributo, mas sim
+	// um valor CALCULADO em função de um valor de atributo.;
+	public void setanoFrabricacao(int anoFrabricacao) {
+		if (anoFrabricacao < anoFrabricacao) {
+			throw new RuntimeException("Ano de vencimento invalido, ano de vencimento tem que ser maior que ano de fabricacao!.");
+
+		}
+
+	}
+
+	public void setAnoFrabricacao(int anoFrabricacao) {
+		this.anoFrabricacao = anoFrabricacao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
+	}
+
+	public void setLote(String lote) {
+		this.lote = lote;
+	}
+
+	public void setQuantidadeEmUnidade(double quantidadeEmUnidade) {
+		this.quantidadeEmUnidade = quantidadeEmUnidade;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public String getLote() {
+		return lote;
+	}
+
+	public double getQuantidadeEmUnidade() {
+		return quantidadeEmUnidade;
+	}
+
+	public String getCodigo() {
+		return codigo;
+	}
+
+	public int getAnoFrabricacao() {
+		return anoFrabricacao;
+	}
+}

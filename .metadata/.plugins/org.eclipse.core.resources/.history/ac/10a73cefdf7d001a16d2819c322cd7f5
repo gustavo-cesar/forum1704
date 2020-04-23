@@ -1,0 +1,14 @@
+package forum20200413;
+
+public class AppProduto {
+	
+	public static void main(String[] args) {
+		Produto passatempo = new Produto();
+			
+			passatempo.setdescricao("Passsatempo biscoito recheado 180g ");
+			passatempo.setCo
+			
+		
+	}
+	
+}

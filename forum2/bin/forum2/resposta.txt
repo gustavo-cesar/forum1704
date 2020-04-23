@@ -1,0 +1,57 @@
+1. Explicar o conceito de encapsulamento (métodos e atributos), destacando seu propósito.
+
+Encapsulamento vem de encapsular é um conceito da Programação Orientada a Objetos onde
+permite separar o programa em partes tronando o software mais flexivel facil de modificar 
+e criar novas implementaçoes onde estado de objetos (as variáveis da classe) e seus comportamentos 
+(os métodos da classe) são agrupados em conjuntos segundo o seu grau de relação, o proposito 
+do encapsulamento e de organizar os dados que ja estejam relacionados ele tambem é  utilizado
+para proteger os campos e operações de uma classe (atributos e métodos) permitindo que apenas
+ os membros públicos e metodos Get,Set sejam acessados pelos usuários de determinada classe.
+
+Ex:
+
+private double preco;
+
+	public void setPreco(double preco) {
+		if (preco <= 0.00) {
+			throw new RuntimeException("Valor não pode ser menor que zero");
+		}
+		this.preco = preco;
+	}
+
+	public double getPreco() {
+		return preco;
+	}
+
+
+
+2. Explicar como o uso do encapsulamento em conjunto com métodos modificadores (como os setters) 
+podem promover o reuso de código.
+com o encapsulamento os dados ficam mais orgamizados onde sao agrupados em classes facilitando 
+a manutencao e o resuso do codigo. Em um processo de encapsulamento os atributos das classes 
+são do tipo private. Para acessar esses tipos de modificadores, é necessário criar métodos 
+setters e getters, onde os metodos setters serve para alterar informacao de uma propriedade
+de um objeto e os metodos gettrs para retorna o valor dessa propriedade.
+
+	 public Smartphone(String nomeSmartphone, String marca, double preco) {
+	      setPreco(preco);
+	 }
+
+
+	public void setPreco(double preco) {
+		if (preco <= 0.00) {
+			throw new RuntimeException("Valor não pode ser menor que zero");
+		}
+		this.preco = preco;
+	}
+
+
+
+https://www.devmedia.com.br/encapsulamento-polimorfismo-heranca-em-java/12991
+https://pt.wikibooks.org/wiki/Programa%C3%A7%C3%A3o_Orientada_a_Objetos/Encapsulamento
+https://www.devmedia.com.br/conceitos-encapsulamento-programacao-orientada-a-objetos/18702
+
+
+
+
+

@@ -1,0 +1,9 @@
+package forum20200413;
+
+public class Produto {
+	private String descricao;;
+	private String codigo;
+	private int quantidadeEmUnidade;
+	private int lote;
+
+}

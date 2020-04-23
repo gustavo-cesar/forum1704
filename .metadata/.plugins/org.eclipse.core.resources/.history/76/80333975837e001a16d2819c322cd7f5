@@ -1,0 +1,17 @@
+package aula20200413.produto;
+
+public class AppProduto {
+
+	public static void main(String[] args) {
+		Produto passatempo = new Produto();
+
+		passatempo.setDescricao("Passsatempo biscoito recheado 180g");
+		passatempo.setCodigo("12304561");
+		passatempo.setQuantidadeEmUnidade(12);
+		passatempo.setLote("5409932");
+		passatempo.setAnoFrabricacao(2020);
+
+		System.out.println(passatempo);
+	}
+
+}

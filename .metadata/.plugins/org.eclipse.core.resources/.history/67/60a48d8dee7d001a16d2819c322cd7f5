@@ -1,0 +1,44 @@
+package forum20200413;
+
+public class Produto {
+	private String descricao;;
+	private String codigo;
+	private String quantidadeEmUnidade;
+	private String lote;
+
+	public String toString() {
+		return "Produto[" + "codigo:" + getCodigo()  + ", Descricao:" + getDescricao() + ", lote=" + getLote() + ", Quantidade " + getQuantidadeEmUnidade() + " ]";
+
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+	public void setCodigo(String codigo) {
+		this.codigo = codigo;
+	}
+
+	public void setLote(String lote) {
+		this.lote = lote;
+	}
+
+	public void setQuantidadeEmUnidade(String quantidadeEmUnidade) {
+		this.quantidadeEmUnidade = quantidadeEmUnidade;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public String getLote() {
+		return lote;
+	}
+	
+	public String getQuantidadeEmUnidade() {
+		return quantidadeEmUnidade;
+	}
+	public String getCodigo() {
+		return codigo;
+	}
+}

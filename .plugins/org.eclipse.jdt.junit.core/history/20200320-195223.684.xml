@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Testes" project="3sadsis2020" tests="5" started="5" failures="0" errors="0" ignored="0">
+  <testsuite name="aula20200320.testesGerais.Testes" time="0.053" displayname="Testes" uniqueid="[engine:junit-jupiter]/[class:aula20200320.testesGerais.Testes]">
+    <testcase name="testarComissaoDoVendedorComValorMinimo" classname="aula20200320.testesGerais.Testes" time="0.034" displayname="testarComissaoDoVendedorComValorMinimo()" uniqueid="[engine:junit-jupiter]/[class:aula20200320.testesGerais.Testes]/[method:testarComissaoDoVendedorComValorMinimo()]"/>
+    <testcase name="testarComissaoDoVendedor" classname="aula20200320.testesGerais.Testes" time="0.002" displayname="testarComissaoDoVendedor()" uniqueid="[engine:junit-jupiter]/[class:aula20200320.testesGerais.Testes]/[method:testarComissaoDoVendedor()]"/>
+    <testcase name="testarSubtracaoDeDoisInteiros" classname="aula20200320.testesGerais.Testes" time="0.002" displayname="testarSubtracaoDeDoisInteiros()" uniqueid="[engine:junit-jupiter]/[class:aula20200320.testesGerais.Testes]/[method:testarSubtracaoDeDoisInteiros()]"/>
+    <testcase name="testarSomaDeDoisInteiros" classname="aula20200320.testesGerais.Testes" time="0.002" displayname="testarSomaDeDoisInteiros()" uniqueid="[engine:junit-jupiter]/[class:aula20200320.testesGerais.Testes]/[method:testarSomaDeDoisInteiros()]"/>
+    <testcase name="testarComissaoDoVendedorComFaixaDeValores" classname="aula20200320.testesGerais.Testes" time="0.013" displayname="testarComissaoDoVendedorComFaixaDeValores()" uniqueid="[engine:junit-jupiter]/[class:aula20200320.testesGerais.Testes]/[method:testarComissaoDoVendedorComFaixaDeValores()]"/>
+  </testsuite>
+</testrun>

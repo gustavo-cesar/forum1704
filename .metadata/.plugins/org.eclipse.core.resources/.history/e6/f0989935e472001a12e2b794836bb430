@@ -1,0 +1,81 @@
+package aula20200327.carro;
+
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
+class TestesComCarro {
+
+	@Test
+	void testarConsumo() {
+		Carro palioABC3333 = new Carro(0);
+		Carro golAGJ1234 = new Carro(0);
+		
+		assertTrue(palioABC3333.isDesligado());
+		assertTrue(golAGJ1234.isDesligado());
+		
+		palioABC3333.abastecer(10.00);
+		golAGJ1234.abastecer(25.00);
+		
+		palioABC3333.ligar();
+		assertEquals(9.75, palioABC3333.getCombustivelNoTanqueEmLitros());
+		
+		golAGJ1234.ligar();
+		assertEquals(24.75, golAGJ1234.getCombustivelNoTanqueEmLitros());	
+		
+		palioABC3333.acelerar();
+		palioABC3333.acelerar();
+		palioABC3333.acelerar();
+		assertEquals(9.00, palioABC3333.getCombustivelNoTanqueEmLitros());
+		
+		golAGJ1234.acelerar();
+		assertEquals(24.50, golAGJ1234.getCombustivelNoTanqueEmLitros());
+	}
+	
+	@Test
+	void carroSemCombustivel(){
+		Carro celta = new Carro(0);
+		Carro gol = new Carro(0);
+		
+		celta.abastecer(2.00);
+		celta.ligar();
+		celta.acelerar();
+		celta.acelerar();
+		celta.acelerar();
+		celta.acelerar();
+		celta.acelerar();
+		celta.acelerar();
+		celta.acelerar();
+		celta.acelerar();
+		assertEquals(true, celta.isDesligado());
+		
+		gol.abastecer(1.00);
+		gol.ligar();
+		gol.acelerar();
+		gol.desligar();
+		gol.ligar();
+		gol.acelerar();
+		gol.acelerar();
+		assertEquals(true, gol.isDesligado());		
+	}
+	
+	
+	@Test
+	void ReabastecerCarro() {
+		Carro golf = new Carro (5.00);
+		
+		golf.ligar();
+		
+		golf.acelerar();
+		golf.acelerar();
+		golf.acelerar();
+		assertEquals(7.0, golf.getCombustivelNoTanqueEmLitros());
+		
+		golf.abastecer(3.00);
+		
+		
+	}
+	
+	
+
+}
+

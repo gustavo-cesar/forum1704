@@ -1,0 +1,11 @@
+package forum2;
+
+public class AppCamiseta {
+	
+	public static void main(String[] marca, String[] tamanho, double preco) {
+		Camiseta camista1 = new Camiseta();
+		
+		camista1.verificarEstado();
+	}
+
+}

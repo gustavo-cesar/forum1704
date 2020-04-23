@@ -1,0 +1,11 @@
+package forum2;
+
+public class Camiseta {
+	
+	private int idcamiseta;
+	
+	private String marca;
+	private String tamanho;
+	private double preco;
+	
+}
